@@ -48,6 +48,14 @@
 <ul class="current">
 <li class="toctree-l2 current"><a class="reference internal current" href="#">Problem 1</a>
 <ul class="current">
+<li class="toctree-l3"><a class="reference internal" href="#step-1-theoretical-foundation">Step 1: Theoretical Foundation</a>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="#step-2-analysis-of-the-range">Step 2: Analysis of the Range</a>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="#step-3-practical-applications">Step 3: Practical Applications</a>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="#step-4-implementation-python-simulation">Step 4: Implementation (Python Simulation)</a>
+</li>
 </ul>
 </li>
 <li class="toctree-l2"><a class="reference internal" href="../Problem_2/">Problem 2</a>
@@ -120,7 +128,64 @@
 <div class="document" itemscope="itemscope" itemtype="http://schema.org/Article" role="main">
 <div class="section" itemprop="articleBody">
 <h1 id="problem-1">Problem 1</h1>
-<p>hihihih</p>
+<p>&lt;&lt;&lt;&lt;&lt;&lt;&lt; HEAD
+This problem involves both theoretical derivations and computational simulations. I'll help you structure your solution by guiding you through each section.
+=======</p>
+<hr/>
+<h3 id="step-1-theoretical-foundation"><strong>Step 1: Theoretical Foundation</strong></h3>
+<ol>
+<li><strong>Governing Equations</strong><br/>
+   Projectile motion follows Newton’s Second Law:  </li>
+<li>In the horizontal direction: <span class="arithmatex">\( a_x = 0 \)</span> (no acceleration in ideal conditions)  </li>
+<li>In the vertical direction: <span class="arithmatex">\( a_y = -g \)</span> (acceleration due to gravity)  </li>
+</ol>
+<p>These lead to the following motion equations:<br/>
+   [
+   x(t) = v_0 \cos(\theta) t
+   ]
+   [
+   y(t) = v_0 \sin(\theta) t - \frac{1}{2} g t^2
+   ]</p>
+<ol>
+<li>
+<p><strong>Time of Flight</strong><br/>
+   Solve for <span class="arithmatex">\( t_f \)</span> when <span class="arithmatex">\( y(t) = 0 \)</span>:<br/>
+   [
+   0 = v_0 \sin(\theta) t - \frac{1}{2} g t^2
+   ]
+   [
+   t_f = \frac{2 v_0 \sin(\theta)}{g}
+   ]</p>
+</li>
+<li>
+<p><strong>Range Equation</strong><br/>
+   Substituting <span class="arithmatex">\( t_f \)</span> into <span class="arithmatex">\( x(t) \)</span>:<br/>
+   [
+   R = v_0 \cos(\theta) \times \frac{2 v_0 \sin(\theta)}{g}
+   ]
+   [
+   R = \frac{v_0^2}{g} \sin(2\theta)
+   ]</p>
+</li>
+</ol>
+<hr/>
+<h3 id="step-2-analysis-of-the-range"><strong>Step 2: Analysis of the Range</strong></h3>
+<ul>
+<li>The range is <strong>maximum at</strong> <span class="arithmatex">\( \theta = 45^\circ \)</span> because <span class="arithmatex">\( \sin(2\theta) \)</span> is maximized at <span class="arithmatex">\( 90^\circ \)</span>.</li>
+<li>Increasing initial velocity <span class="arithmatex">\( v_0 \)</span> increases <span class="arithmatex">\( R \)</span>.</li>
+<li>Increasing gravity <span class="arithmatex">\( g \)</span> reduces <span class="arithmatex">\( R \)</span>.</li>
+</ul>
+<hr/>
+<h3 id="step-3-practical-applications"><strong>Step 3: Practical Applications</strong></h3>
+<ul>
+<li>In sports (e.g., soccer, baseball), optimizing launch angle maximizes distance.</li>
+<li>In engineering, artillery and rockets require precise angle calculations.</li>
+<li>In astrophysics, launch angles affect orbital trajectories.</li>
+</ul>
+<hr/>
+<h3 id="step-4-implementation-python-simulation"><strong>Step 4: Implementation (Python Simulation)</strong></h3>
+<p>I’ll now provide a Python script for simulating and plotting range vs. angle.</p>
+<p>This script calculates and plots the projectile range as a function of launch angle. Let me know if you want to add features like air resistance or uneven terrain! </p>
 </div>
 </div><footer>
 <div aria-label="Footer Navigation" class="rst-footer-buttons" role="navigation">
