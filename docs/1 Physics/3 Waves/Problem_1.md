@@ -48,7 +48,7 @@ Imagine we drop **two pebbles** into a pond at different positions. Each creates
 - **Constructive Interference** → When two waves **add up**, they create a **higher wave**.  
 - **Destructive Interference** → When two waves **cancel out**, they create a **flat surface (no wave)**.  
 
-If we place **waves at the vertices of a square (or any polygon)**, the overlapping waves form **beautiful interference patterns!** 🌊  
+If we place **waves at the vertices of a square (or any polygon)**, the overlapping waves form **beautiful interference patterns!** 
 
 ---
 VISUAL
