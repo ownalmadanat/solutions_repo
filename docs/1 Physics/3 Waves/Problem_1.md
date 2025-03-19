@@ -51,3 +51,5 @@ Imagine we drop **two pebbles** into a pond at different positions. Each creates
 If we place **waves at the vertices of a square (or any polygon)**, the overlapping waves form **beautiful interference patterns!** 🌊  
 
 ---
+VISUAL
+https://replit.com/@ownmadanat05/WaveInterference
