@@ -53,3 +53,7 @@ If we place **waves at the vertices of a square (or any polygon)**, the overlapp
 ---
 VISUAL
 https://replit.com/@ownmadanat05/WaveInterference
+TRY IT YOU SELF 
+---
+SIMULATIONS 
+![alt text](image.png)
