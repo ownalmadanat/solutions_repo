@@ -57,3 +57,4 @@ TRY IT YOU SELF
 ---
 SIMULATIONS 
 ![alt text](image.png)
+![alt text](image-1.png)
