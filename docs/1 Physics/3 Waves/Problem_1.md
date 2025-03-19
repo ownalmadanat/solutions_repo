@@ -1,7 +1,7 @@
 # Problem 1
-# 📘 Waves on Water Surface (Single Disturbance Equation) - Notes  
+#  Waves on Water Surface (Single Disturbance Equation) - Notes  
 
-## 🌊 Understanding the Wave Equation  
+## Understanding the Wave Equation  
 When a small disturbance (like dropping a stone) happens in water, it creates **circular waves** that move outward. The **Single Disturbance Equation** describes how these waves behave:  
 
 $$
@@ -14,9 +14,7 @@ $$
 - **$A$** → The **amplitude** of the wave (maximum height).  
 - **$r$** → The **distance** from the source $(x_0, y_0)$ to the point $(x, y)$, given by:  
 
-  $$
-  r = \sqrt{(x - x_0)^2 + (y - y_0)^2}
-  $$  
+  $$r = \sqrt{(x - x_0)^2 + (y - y_0)^2}$$  
 
 - **$k = \frac{2\pi}{\lambda}$** → The **wave number**, which depends on the **wavelength** $\lambda$ (the distance between two wave crests).  
 - **$\omega = 2\pi f$** → The **angular frequency**, related to the **frequency** $f$ (how many waves pass per second).  
@@ -24,7 +22,7 @@ $$
 
 ---
 
-## 🔄 Relationship Between the Variables  
+## Relationship Between the Variables  
 
 1. **The wave height $\eta(x, y, t)$ gets smaller as distance $r$ increases**  
    - Since $\eta$ has a factor of $\frac{A}{\sqrt{r}}$, as $r$ increases, the denominator grows, making $\eta$ smaller.  
@@ -43,7 +41,7 @@ $$
 
 ---
 
-## 🎯 Example - Two Sources Interfering  
+##  Example - Two Sources Interfering  
 
 Imagine we drop **two pebbles** into a pond at different positions. Each creates its own wave, and **where they meet, interference happens**:  
 
@@ -53,12 +51,3 @@ Imagine we drop **two pebbles** into a pond at different positions. Each creates
 If we place **waves at the vertices of a square (or any polygon)**, the overlapping waves form **beautiful interference patterns!** 🌊  
 
 ---
-
-## 📌 Key Takeaways  
-- The **wave gets weaker** as it moves further away.  
-- **Higher frequency** → Faster up-and-down motion.  
-- **Shorter wavelength** → More waves in the same space.  
-- **Interference creates cool patterns** when multiple sources are involved.  
-
-🌟 This is why ocean waves, sound waves, and even **light waves** behave similarly! 🚀  
-
