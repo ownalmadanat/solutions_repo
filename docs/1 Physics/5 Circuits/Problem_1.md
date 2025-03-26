@@ -8,13 +8,16 @@ $$
 $$
 
 $$
-\text{An electrical circuit is a closed loop or pathway through which electric current flows. The basic components of a circuit include:}
+\text{An electrical circuit is a closed loop or pathway through which electric current flows.
+ The basic components of a circuit include:}
 $$
 
 $$
 \bullet \ \textbf{Voltage source} \ (V) \text{ – Provides electrical energy.} \\ 
-\bullet \ \textbf{Resistors} \ (R) \text{ – Oppose the flow of current and convert electrical energy into heat.} \\ 
-\bullet \ \textbf{Capacitors and Inductors} \text{ – Store and release electrical energy (not considered in this problem).} \\ 
+\bullet \ \textbf{Resistors} \ (R) \text{ – 
+Oppose the flow of current and convert electrical energy into heat.} \\ 
+\bullet \ \textbf{Capacitors and Inductors} \text{ – 
+Store and release electrical energy (not considered in this problem).} \\ 
 \bullet \ \textbf{Conductors and Wires} \text{ – Provide the pathway for electric current.} 
 $$
 
@@ -50,7 +53,8 @@ $$
 
 $$
 \textbf{Example:} \text{ If three resistors } (R_1 = 5\Omega, R_2 = 10\Omega, R_3 = 20\Omega) 
-\text{ are connected in series, the total resistance is:}
+\text{ are connected in series,
+ the total resistance is:}
 $$
 
 $$
@@ -180,6 +184,4 @@ $$
 \textbf{Step 3: Iterative Reduction}
 $$
 
-$$
-\text{Repeat series and parallel detection until only two nodes remain (input and output).}
-$$
+try it you self 
