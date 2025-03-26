@@ -120,6 +120,145 @@
 <div class="document" itemscope="itemscope" itemtype="http://schema.org/Article" role="main">
 <div class="section" itemprop="articleBody">
 <h1 id="problem-1">Problem 1</h1>
+<div class="arithmatex">\[
+\textbf{Equivalent Resistance Using Graph Theory}
+\]</div>
+<div class="arithmatex">\[
+\textbf{🔹 Introduction to Electrical Circuits}
+\]</div>
+<div class="arithmatex">\[
+\text{An electrical circuit is a closed loop or pathway through which electric current flows. The basic components of a circuit include:}
+\]</div>
+<div class="arithmatex">\[
+\begin{aligned}
+&amp;\bullet \ \textbf{Voltage source} \ (V) \text{ – Provides electrical energy.} \\
+&amp;\bullet \ \textbf{Resistors} \ (R) \text{ – Oppose the flow of current and convert electrical energy into heat.} \\
+&amp;\bullet \ \textbf{Capacitors \&amp; Inductors} \text{ – Store and release electrical energy (not considered in this problem).} \\
+&amp;\bullet \ \textbf{Conductors \&amp; Wires} \text{ – Provide the pathway for electric current.} \\
+\end{aligned}
+\]</div>
+<div class="arithmatex">\[
+\text{One of the key problems in circuit analysis is determining the equivalent resistance } (R_{eq}), 
+\text{ which simplifies a complex circuit into a single resistance value while maintaining the same electrical behavior.}
+\]</div>
+<hr/>
+<div class="arithmatex">\[
+\textbf{🔹 Understanding Equivalent Resistance}
+\]</div>
+<div class="arithmatex">\[
+\text{Equivalent resistance depends on how resistors are arranged in a circuit:}
+\]</div>
+<hr/>
+<div class="arithmatex">\[
+\textbf{1️⃣ Series Resistors}
+\]</div>
+<div class="arithmatex">\[
+\text{Resistors are in series if the same current flows through them one after another.}
+\]</div>
+<div class="arithmatex">\[
+R_{eq} = R_1 + R_2 + \dots + R_n
+\]</div>
+<div class="arithmatex">\[
+\textbf{Example:} \text{ If three resistors } (R_1 = 5\Omega, R_2 = 10\Omega, R_3 = 20\Omega) 
+\text{ are connected in series, the total resistance is:}
+\]</div>
+<div class="arithmatex">\[
+R_{eq} = 5 + 10 + 20 = 35\Omega
+\]</div>
+<hr/>
+<div class="arithmatex">\[
+\textbf{2️⃣ Parallel Resistors}
+\]</div>
+<div class="arithmatex">\[
+\text{Resistors are in parallel if they share the same voltage drop but split the current.}
+\]</div>
+<div class="arithmatex">\[
+\frac{1}{R_{eq}} = \frac{1}{R_1} + \frac{1}{R_2} + \dots + \frac{1}{R_n}
+\]</div>
+<div class="arithmatex">\[
+\textbf{Example:} \text{ If two resistors } (R_1 = 6\Omega, R_2 = 3\Omega) \text{ are in parallel, their equivalent resistance is:}
+\]</div>
+<div class="arithmatex">\[
+\frac{1}{R_{eq}} = \frac{1}{6} + \frac{1}{3} = \frac{1}{2} \Rightarrow R_{eq} = 2\Omega
+\]</div>
+<hr/>
+<div class="arithmatex">\[
+\textbf{3️⃣ Complex Networks}
+\]</div>
+<div class="arithmatex">\[
+\text{Real-world circuits often involve nested combinations of series and parallel resistors.}
+\]</div>
+<div class="arithmatex">\[
+\begin{aligned}
+&amp;\bullet \ \textbf{Traditional approach:} \text{ Manually apply the rules iteratively.} \\
+&amp;\bullet \ \textbf{Graph theory approach:} \text{ Treat the circuit as a graph, making automated reductions possible.} \\
+\end{aligned}
+\]</div>
+<hr/>
+<div class="arithmatex">\[
+\textbf{🔹 Graph Representation of Electrical Circuits}
+\]</div>
+<div class="arithmatex">\[
+\text{A circuit can be represented as a graph, where:}
+\]</div>
+<div class="arithmatex">\[
+\begin{aligned}
+&amp;\bullet \ \textbf{Nodes (vertices)} \text{ represent junctions or connection points.} \\
+&amp;\bullet \ \textbf{Edges} \text{ represent resistors, and their weights correspond to resistance values.} \\
+\end{aligned}
+\]</div>
+<div class="arithmatex">\[
+\text{Using graph algorithms, we can systematically reduce complex circuits.}
+\]</div>
+<hr/>
+<div class="arithmatex">\[
+\textbf{🔹 Algorithm for Equivalent Resistance Calculation}
+\]</div>
+<div class="arithmatex">\[
+\text{The approach follows three key steps:}
+\]</div>
+<hr/>
+<div class="arithmatex">\[
+\textbf{Step 1: Graph Representation}
+\]</div>
+<div class="arithmatex">\[
+\text{Construct a graph } G(V,E) \text{ where:}
+\]</div>
+<div class="arithmatex">\[
+\begin{aligned}
+&amp;V \text{ is the set of nodes (junctions).} \\
+&amp;E \text{ is the set of edges (resistors).} \\
+\end{aligned}
+\]</div>
+<div class="arithmatex">\[
+\text{Each resistor } R_i \text{ between nodes } A \text{ and } B \text{ is represented as an edge:}
+\]</div>
+<div class="arithmatex">\[
+(A,B,R_i)
+\]</div>
+<hr/>
+<div class="arithmatex">\[
+\textbf{Step 2: Identify Series and Parallel Resistors}
+\]</div>
+<div class="arithmatex">\[
+\textbf{Series Reduction:} \text{ If a node has only two neighbors, merge it and sum the resistances:}
+\]</div>
+<div class="arithmatex">\[
+R_{eq} = R_1 + R_2
+\]</div>
+<div class="arithmatex">\[
+\textbf{Parallel Reduction:} \text{ If multiple edges connect the same two nodes, apply:}
+\]</div>
+<div class="arithmatex">\[
+\frac{1}{R_{eq}} = \frac{1}{R_1} + \frac{1}{R_2}
+\]</div>
+<hr/>
+<div class="arithmatex">\[
+\textbf{Step 3: Iterative Reduction}
+\]</div>
+<div class="arithmatex">\[
+\text{Repeat series and parallel detection until only two nodes remain (input and output).}
+\]</div>
 </div>
 </div><footer>
 <div aria-label="Footer Navigation" class="rst-footer-buttons" role="navigation">
