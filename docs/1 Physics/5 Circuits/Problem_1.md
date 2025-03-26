@@ -13,13 +13,12 @@ $$
 $$
 
 $$
-\begin{aligned}
-&\bullet \ \textbf{Voltage source} \ (V) \text{ – Provides electrical energy.} \\
-&\bullet \ \textbf{Resistors} \ (R) \text{ – Oppose the flow of current and convert electrical energy into heat.} \\
-&\bullet \ \textbf{Capacitors \& Inductors} \text{ – Store and release electrical energy (not considered in this problem).} \\
-&\bullet \ \textbf{Conductors \& Wires} \text{ – Provide the pathway for electric current.} \\
-\end{aligned}
+\bullet \ \textbf{Voltage source} \ (V) \text{ – Provides electrical energy.} \\
+\bullet \ \textbf{Resistors} \ (R) \text{ – Oppose the flow of current and convert electrical energy into heat.} \\
+\bullet \ \textbf{Capacitors and Inductors} \text{ – Store and release electrical energy (not considered in this problem).} \\
+\bullet \ \textbf{Conductors and Wires} \text{ – Provide the pathway for electric current.} 
 $$
+
 
 $$
 \text{One of the key problems in circuit analysis is determining the equivalent resistance } (R_{eq}), 
