@@ -47,16 +47,6 @@
 <li class="toctree-l1 current"><a class="reference internal current">1 Mechanics</a>
 <ul class="current">
 <li class="toctree-l2 current"><a class="reference internal current" href="#">Problem 1</a>
-<ul class="current">
-<li class="toctree-l3"><a class="reference internal" href="#step-1-theoretical-foundation">Step 1: Theoretical Foundation</a>
-</li>
-<li class="toctree-l3"><a class="reference internal" href="#step-2-analysis-of-the-range">Step 2: Analysis of the Range</a>
-</li>
-<li class="toctree-l3"><a class="reference internal" href="#step-3-practical-applications">Step 3: Practical Applications</a>
-</li>
-<li class="toctree-l3"><a class="reference internal" href="#step-4-implementation-python-simulation">Step 4: Implementation (Python Simulation)</a>
-</li>
-</ul>
 </li>
 <li class="toctree-l2"><a class="reference internal" href="../Problem_2/">Problem 2</a>
 </li>
@@ -127,65 +117,151 @@
 </div>
 <div class="document" itemscope="itemscope" itemtype="http://schema.org/Article" role="main">
 <div class="section" itemprop="articleBody">
-<h1 id="problem-1">Problem 1</h1>
-<p>&lt;&lt;&lt;&lt;&lt;&lt;&lt; HEAD
-This problem involves both theoretical derivations and computational simulations. I'll help you structure your solution by guiding you through each section.
-=======</p>
-<hr/>
-<h3 id="step-1-theoretical-foundation"><strong>Step 1: Theoretical Foundation</strong></h3>
-<ol>
-<li><strong>Governing Equations</strong><br/>
-   Projectile motion follows Newton’s Second Law:  </li>
-<li>In the horizontal direction: <span class="arithmatex">\( a_x = 0 \)</span> (no acceleration in ideal conditions)  </li>
-<li>In the vertical direction: <span class="arithmatex">\( a_y = -g \)</span> (acceleration due to gravity)  </li>
-</ol>
-<p>These lead to the following motion equations:<br/>
-   [
-   x(t) = v_0 \cos(\theta) t
-   ]
-   [
-   y(t) = v_0 \sin(\theta) t - \frac{1}{2} g t^2
-   ]</p>
-<ol>
-<li>
-<p><strong>Time of Flight</strong><br/>
-   Solve for <span class="arithmatex">\( t_f \)</span> when <span class="arithmatex">\( y(t) = 0 \)</span>:<br/>
-   [
-   0 = v_0 \sin(\theta) t - \frac{1}{2} g t^2
-   ]
-   [
-   t_f = \frac{2 v_0 \sin(\theta)}{g}
-   ]</p>
-</li>
-<li>
-<p><strong>Range Equation</strong><br/>
-   Substituting <span class="arithmatex">\( t_f \)</span> into <span class="arithmatex">\( x(t) \)</span>:<br/>
-   [
-   R = v_0 \cos(\theta) \times \frac{2 v_0 \sin(\theta)}{g}
-   ]
-   [
-   R = \frac{v_0^2}{g} \sin(2\theta)
-   ]</p>
-</li>
-</ol>
-<hr/>
-<h3 id="step-2-analysis-of-the-range"><strong>Step 2: Analysis of the Range</strong></h3>
-<ul>
-<li>The range is <strong>maximum at</strong> <span class="arithmatex">\( \theta = 45^\circ \)</span> because <span class="arithmatex">\( \sin(2\theta) \)</span> is maximized at <span class="arithmatex">\( 90^\circ \)</span>.</li>
-<li>Increasing initial velocity <span class="arithmatex">\( v_0 \)</span> increases <span class="arithmatex">\( R \)</span>.</li>
-<li>Increasing gravity <span class="arithmatex">\( g \)</span> reduces <span class="arithmatex">\( R \)</span>.</li>
-</ul>
-<hr/>
-<h3 id="step-3-practical-applications"><strong>Step 3: Practical Applications</strong></h3>
-<ul>
-<li>In sports (e.g., soccer, baseball), optimizing launch angle maximizes distance.</li>
-<li>In engineering, artillery and rockets require precise angle calculations.</li>
-<li>In astrophysics, launch angles affect orbital trajectories.</li>
-</ul>
-<hr/>
-<h3 id="step-4-implementation-python-simulation"><strong>Step 4: Implementation (Python Simulation)</strong></h3>
-<p>I’ll now provide a Python script for simulating and plotting range vs. angle.</p>
-<p>This script calculates and plots the projectile range as a function of launch angle. Let me know if you want to add features like air resistance or uneven terrain! </p>
+<div class="arithmatex">\[
+\textbf{1. Theoretical Foundation}
+\]</div>
+<div class="arithmatex">\[
+\begin{equation*}
+\begin{aligned}
+&amp;\text{We study the motion of a projectile under ideal conditions:} \\
+&amp;\bullet \ \text{Launched from the ground} \\
+&amp;\bullet \ \text{Initial velocity } v_0 \\
+&amp;\bullet \ \text{At an angle } \theta \text{ above the horizontal} \\
+&amp;\bullet \ \text{Subject to gravity } g \ (\text{constant}) \\
+&amp;\bullet \ \text{No air resistance} \\
+&amp;\text{We analyze the horizontal range as a function of the angle } \theta.
+\end{aligned}
+\end{equation*}
+\]</div>
+<div class="arithmatex">\[
+\textbf{1.1 Equations of Motion}
+\]</div>
+<div class="arithmatex">\[
+\begin{equation*}
+\begin{aligned}
+&amp;\text{The motion is decomposed into two components:} \\
+&amp;\text{Horizontal position:} \quad x(t) = v_0 \cos(\theta) \cdot t \\
+&amp;\text{Vertical position:} \quad y(t) = v_0 \sin(\theta) \cdot t - \frac{1}{2}gt^2
+\end{aligned}
+\end{equation*}
+\]</div>
+<div class="arithmatex">\[
+\textbf{1.2 Time of Flight}
+\]</div>
+<div class="arithmatex">\[
+\begin{equation*}
+\begin{aligned}
+&amp;\text{Set } y(t) = 0 \text{ to find total time in the air:} \\
+&amp;0 = v_0 \sin(\theta) \cdot t - \frac{1}{2}gt^2 \\
+&amp;\Rightarrow t \left(v_0 \sin(\theta) - \frac{1}{2}gt \right) = 0 \\
+&amp;\Rightarrow t = 0 \quad \text{or} \quad t = \frac{2v_0 \sin(\theta)}{g} \\
+&amp;\text{The second root gives the total flight time.}
+\end{aligned}
+\end{equation*}
+\]</div>
+<div class="arithmatex">\[
+\textbf{1.3 Range}
+\]</div>
+<div class="arithmatex">\[
+\begin{equation*}
+\begin{aligned}
+&amp;\text{Horizontal range is the distance covered during full flight:} \\
+&amp;R = x\left(\frac{2v_0 \sin(\theta)}{g}\right) = v_0 \cos(\theta) \cdot \frac{2v_0 \sin(\theta)}{g} \\
+&amp;R = \frac{v_0^2 \sin(2\theta)}{g}
+\end{aligned}
+\end{equation*}
+\]</div>
+<div class="arithmatex">\[
+\textbf{1.4 Range Symmetry and Maximum}
+\]</div>
+<div class="arithmatex">\[
+\begin{equation*}
+\begin{aligned}
+&amp;\text{The range depends on } \sin(2\theta), \text{ which is maximal when } 2\theta = 90^\circ. \\
+&amp;\Rightarrow \theta = 45^\circ \text{ gives maximum range.} \\
+&amp;\text{Since } \sin(2\theta) = \sin(180^\circ - 2\theta), \text{ we get:} \\
+&amp;R(\theta) = R(90^\circ - \theta) \\
+&amp;\text{Thus, angles like } 30^\circ \text{ and } 60^\circ \text{ yield the same range.}
+\end{aligned}
+\end{equation*}
+\]</div>
+<div class="arithmatex">\[
+\textbf{2. Analysis of the Range}
+\]</div>
+<div class="arithmatex">\[
+\textbf{2.1 Effect of Launch Angle}
+\]</div>
+<div class="arithmatex">\[
+\begin{equation*}
+\begin{aligned}
+&amp;\text{The function } R = \frac{v_0^2 \sin(2\theta)}{g} \text{ shows that range varies with } \sin(2\theta). \\
+&amp;\text{Maximum occurs at } \theta = 45^\circ.
+\end{aligned}
+\end{equation*}
+\]</div>
+<div class="arithmatex">\[
+\textbf{2.2 Effect of Initial Velocity}
+\]</div>
+<div class="arithmatex">\[
+\begin{equation*}
+\begin{aligned}
+&amp;R \propto v_0^2 \Rightarrow \text{doubling } v_0 \text{ quadruples the range.}
+\end{aligned}
+\end{equation*}
+\]</div>
+<div class="arithmatex">\[
+\textbf{2.3 Effect of Gravity}
+\]</div>
+<div class="arithmatex">\[
+\begin{equation*}
+\begin{aligned}
+&amp;R \propto \frac{1}{g} \Rightarrow \text{lower gravity increases the range.} \\
+&amp;\text{Example: projectiles travel farther on the Moon.}
+\end{aligned}
+\end{equation*}
+\]</div>
+<div class="arithmatex">\[
+\textbf{3. Extensions and Applications}
+\]</div>
+<div class="arithmatex">\[
+\textbf{3.1 Launching from a Height}
+\]</div>
+<div class="arithmatex">\[
+\begin{equation*}
+\begin{aligned}
+&amp;\text{If the launch occurs from height } h, \text{ the vertical position becomes:} \\
+&amp;y(t) = h + v_0 \sin(\theta) \cdot t - \frac{1}{2}gt^2 \\
+&amp;\text{Solve } y(t) = 0 \text{ (quadratic) to get time of flight, which is longer,} \\
+&amp;\text{and results in a greater horizontal range.}
+\end{aligned}
+\end{equation*}
+\]</div>
+<div class="arithmatex">\[
+\textbf{3.2 Including Air Resistance}
+\]</div>
+<div class="arithmatex">\[
+\begin{equation*}
+\begin{aligned}
+&amp;\text{Air resistance adds a drag force:} \\
+&amp;\text{Linear model: } \quad m \frac{dv}{dt} = -mg - kv \\
+&amp;\text{Quadratic model: } \quad m \frac{dv}{dt} = -mg - kv^2 \\
+&amp;\text{These are solved numerically and generally reduce the range.}
+\end{aligned}
+\end{equation*}
+\]</div>
+<div class="arithmatex">\[
+\textbf{3.3 Real-World Applications}
+\]</div>
+<div class="arithmatex">\[
+\begin{equation*}
+\begin{aligned}
+&amp;\text{Projectile motion applies to:} \\
+&amp;\bullet \ \text{Sports: basketball, football, javelin} \\
+&amp;\bullet \ \text{Engineering: ballistics, drone pathing} \\
+&amp;\bullet \ \text{Space: orbital insertion, moon landings}
+\end{aligned}
+\end{equation*}
+\]</div>
 </div>
 </div><footer>
 <div aria-label="Footer Navigation" class="rst-footer-buttons" role="navigation">
