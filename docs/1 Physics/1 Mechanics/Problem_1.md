@@ -171,5 +171,7 @@ $$
 ![alt text](image-1.png)
  
  --visual simulation--
+
+ 
  https://replit.com/@gewfwewegfwef/ProjectileRangePlotter
  ![alt text](image-2.png)
