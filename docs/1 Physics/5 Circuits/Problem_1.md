@@ -1,31 +1,5 @@
 # Problem 1
-$$
-\textbf{Equivalent Resistance Using Graph Theory}
-$$
 
-$$
-\textbf{🔹 Introduction to Electrical Circuits}
-$$
-
-$$
-\text{An electrical circuit is a closed loop or pathway through which electric current flows.
- The basic components of a circuit include:}
-$$
-
-
-\bullet \ \textbf{Voltage source} \ (V) \text{ – Provides electrical energy.} \\ 
-\bullet \ \textbf{Resistors} \ (R) \text{ – 
-Oppose the flow of current and convert electrical energy into heat.} \\ 
-\bullet \ \textbf{Capacitors and Inductors} \text{ – 
-Store and release electrical energy (not considered in this problem).} \\ 
-\bullet \ \textbf{Conductors and Wires} \text{ – Provide the pathway for electric current.} 
-
-
-
-$$
-\text{One of the key problems in circuit analysis is determining the equivalent resistance } (R_{eq}), 
-\text{ which simplifies a complex circuit into a single resistance value while maintaining the same electrical behavior.}
-$$
 
 ---
 
