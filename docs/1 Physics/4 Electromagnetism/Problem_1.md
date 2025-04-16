@@ -153,3 +153,6 @@ $$
 - Electric fields affect speed (kinetic energy); magnetic fields affect direction.
 - The resulting motion may be circular, helical, or exhibit drift, depending on the configuration.
 - This principle underlies many devices and techniques in physics, engineering, and medical imaging.
+![alt text](image.png)
+![alt text](image-1.png)
+interactive link https://colab.research.google.com/drive/1luBVZKsQt-xeJD32WD283miE4L5eFPEb#scrollTo=lhhA791zTICc
