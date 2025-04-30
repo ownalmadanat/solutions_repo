@@ -6,13 +6,13 @@
 <meta content="IE=edge" http-equiv="X-UA-Compatible"/>
 <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
 <link href="../../../img/favicon.ico" rel="shortcut icon"/>
-<title>📘 Central Limit Theorem – Simulation Summary with Mathematical Notation - Physics and Mathematics</title>
+<title>Central Limit Theorem – Simulation Summary with Mathematical Notation - Physics and Mathematics</title>
 <link href="../../../css/theme.css" rel="stylesheet"/>
 <link href="../../../css/theme_extra.css" rel="stylesheet"/>
 <link href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github.min.css" rel="stylesheet"/>
 <script>
         // Current page data
-        var mkdocs_page_name = "\ud83d\udcd8 Central Limit Theorem \u2013 Simulation Summary with Mathematical Notation";
+        var mkdocs_page_name = "Central Limit Theorem \u2013 Simulation Summary with Mathematical Notation";
         var mkdocs_page_input_path = "1 Physics/6 Statistics/Problem_1.md";
         var mkdocs_page_url = null;
       </script>
@@ -82,13 +82,13 @@
 </li>
 <li class="toctree-l1 current"><a class="reference internal current">6 Statistics</a>
 <ul class="current">
-<li class="toctree-l2 current"><a class="reference internal current" href="#">📘 Central Limit Theorem – Simulation Summary with Mathematical Notation</a>
+<li class="toctree-l2 current"><a class="reference internal current" href="#">Central Limit Theorem – Simulation Summary with Mathematical Notation</a>
 <ul class="current">
-<li class="toctree-l3"><a class="reference internal" href="#what-is-the-central-limit-theorem-clt">🧠 What is the Central Limit Theorem (CLT)?</a>
+<li class="toctree-l3"><a class="reference internal" href="#what-is-the-central-limit-theorem-clt">What is the Central Limit Theorem (CLT)?</a>
 </li>
-<li class="toctree-l3"><a class="reference internal" href="#simulation-methodology">⚙️ Simulation Methodology</a>
+<li class="toctree-l3"><a class="reference internal" href="#simulation-methodology">Simulation Methodology</a>
 </li>
-<li class="toctree-l3"><a class="reference internal" href="#results-by-distribution">📊 Results by Distribution</a>
+<li class="toctree-l3"><a class="reference internal" href="#results-by-distribution">Results by Distribution</a>
 <ul>
 <li class="toctree-l4"><a class="reference internal" href="#1-uniform-distribution-x-sim-mathcalu0-1">1️⃣ Uniform Distribution: \( X \sim \mathcal{U}(0, 1) \)</a>
 </li>
@@ -100,9 +100,9 @@
 </li>
 <li class="toctree-l3"><a class="reference internal" href="#summary-table">🔍 Summary Table</a>
 </li>
-<li class="toctree-l3"><a class="reference internal" href="#key-theoretical-insights">🧠 Key Theoretical Insights</a>
+<li class="toctree-l3"><a class="reference internal" href="#key-theoretical-insights">Key Theoretical Insights</a>
 </li>
-<li class="toctree-l3"><a class="reference internal" href="#applications-of-clt">💼 Applications of CLT</a>
+<li class="toctree-l3"><a class="reference internal" href="#applications-of-clt">Applications of CLT</a>
 </li>
 <li class="toctree-l3"><a class="reference internal" href="#conclusion">✅ Conclusion</a>
 </li>
@@ -133,7 +133,7 @@
 <li><a aria-label="Docs" class="icon icon-home" href="../../.."></a></li>
 <li class="breadcrumb-item">1 Physics</li>
 <li class="breadcrumb-item">6 Statistics</li>
-<li class="breadcrumb-item active">📘 Central Limit Theorem – Simulation Summary with Mathematical Notation</li>
+<li class="breadcrumb-item active">Central Limit Theorem – Simulation Summary with Mathematical Notation</li>
 <li class="wy-breadcrumbs-aside">
 </li>
 </ul>
@@ -141,8 +141,8 @@
 </div>
 <div class="document" itemscope="itemscope" itemtype="http://schema.org/Article" role="main">
 <div class="section" itemprop="articleBody">
-<h1 id="central-limit-theorem-simulation-summary-with-mathematical-notation">📘 Central Limit Theorem – Simulation Summary with Mathematical Notation</h1>
-<h2 id="what-is-the-central-limit-theorem-clt">🧠 What is the Central Limit Theorem (CLT)?</h2>
+<h1 id="central-limit-theorem-simulation-summary-with-mathematical-notation">Central Limit Theorem – Simulation Summary with Mathematical Notation</h1>
+<h2 id="what-is-the-central-limit-theorem-clt">What is the Central Limit Theorem (CLT)?</h2>
 <p>The <strong>Central Limit Theorem (CLT)</strong> states:</p>
 <div class="arithmatex">\[
 \text{If } X_1, X_2, \ldots, X_n \text{ are i.i.d. random variables with mean } \mu \text{ and variance } \sigma^2, \text{ then as } n \to \infty,
@@ -152,7 +152,7 @@
 \]</div>
 <p>That is, the <strong>sampling distribution of the sample mean</strong> approaches a <strong>normal distribution</strong>, even if the original data are not normally distributed.</p>
 <hr/>
-<h2 id="simulation-methodology">⚙️ Simulation Methodology</h2>
+<h2 id="simulation-methodology">Simulation Methodology</h2>
 <ol>
 <li>Generate a large population from each of three distributions:</li>
 <li><strong>Uniform</strong>: <span class="arithmatex">\( X \sim \mathcal{U}(0, 1) \)</span></li>
@@ -166,16 +166,14 @@
 <li>Draw <span class="arithmatex">\( N = 1000 \)</span> random samples of size <span class="arithmatex">\( n \in \{5, 10, 30, 50\} \)</span></li>
 <li>
 <p>Compute sample means:<br/>
-     $$
-     \bar{X}<em>i = \frac{1}{n} \sum</em>{j=1}^n x_{ij}
-     $$</p>
+<span class="arithmatex">\(<span class="arithmatex">\(\bar{X}_i = \frac{1}{n} \sum_{j=1}^n x_{ij}\)</span>\)</span></p>
 </li>
 <li>
 <p>Plot the histogram of the sampling distribution of <span class="arithmatex">\( \bar{X} \)</span></p>
 </li>
 </ol>
 <hr/>
-<h2 id="results-by-distribution">📊 Results by Distribution</h2>
+<h2 id="results-by-distribution">Results by Distribution</h2>
 <h3 id="1-uniform-distribution-x-sim-mathcalu0-1">1️⃣ Uniform Distribution: <span class="arithmatex">\( X \sim \mathcal{U}(0, 1) \)</span></h3>
 <ul>
 <li>Symmetric, bounded distribution.</li>
@@ -299,7 +297,7 @@
 </tbody>
 </table>
 <hr/>
-<h2 id="key-theoretical-insights">🧠 Key Theoretical Insights</h2>
+<h2 id="key-theoretical-insights">Key Theoretical Insights</h2>
 <ul>
 <li>As <span class="arithmatex">\( n \)</span> increases:</li>
 <li><span class="arithmatex">\( \bar{X} \sim \mathcal{N}(\mu, \sigma^2/n) \)</span></li>
@@ -314,7 +312,7 @@
 </li>
 </ul>
 <hr/>
-<h2 id="applications-of-clt">💼 Applications of CLT</h2>
+<h2 id="applications-of-clt">Applications of CLT</h2>
 <ul>
 <li><strong>Quality Control</strong>: Predict batch quality from samples</li>
 <li><strong>Healthcare</strong>: Infer population health statistics</li>
