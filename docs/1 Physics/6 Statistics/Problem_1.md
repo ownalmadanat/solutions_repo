@@ -1,6 +1,6 @@
-# 📘 Central Limit Theorem – Simulation Summary with Mathematical Notation
+# Central Limit Theorem – Simulation Summary with Mathematical Notation
 
-## 🧠 What is the Central Limit Theorem (CLT)?
+##  What is the Central Limit Theorem (CLT)?
 
 The **Central Limit Theorem (CLT)** states:
 
@@ -16,7 +16,7 @@ That is, the **sampling distribution of the sample mean** approaches a **normal 
 
 ---
 
-## ⚙️ Simulation Methodology
+##  Simulation Methodology
 
 1. Generate a large population from each of three distributions:
    - **Uniform**: \( X \sim \mathcal{U}(0, 1) \)
@@ -26,15 +26,13 @@ That is, the **sampling distribution of the sample mean** approaches a **normal 
 2. For each population:
    - Draw \( N = 1000 \) random samples of size \( n \in \{5, 10, 30, 50\} \)
    - Compute sample means:  
-     $$
-     \bar{X}_i = \frac{1}{n} \sum_{j=1}^n x_{ij}
-     $$
+     $$\bar{X}_i = \frac{1}{n} \sum_{j=1}^n x_{ij}$$
 
 3. Plot the histogram of the sampling distribution of \( \bar{X} \)
 
 ---
 
-## 📊 Results by Distribution
+##  Results by Distribution
 
 ### 1️⃣ Uniform Distribution: \( X \sim \mathcal{U}(0, 1) \)
 
@@ -92,7 +90,7 @@ That is, the **sampling distribution of the sample mean** approaches a **normal 
 
 ---
 
-## 🧠 Key Theoretical Insights
+##  Key Theoretical Insights
 
 - As \( n \) increases:
   - \( \bar{X} \sim \mathcal{N}(\mu, \sigma^2/n) \)
@@ -105,7 +103,7 @@ That is, the **sampling distribution of the sample mean** approaches a **normal 
 
 ---
 
-## 💼 Applications of CLT
+## Applications of CLT
 
 - **Quality Control**: Predict batch quality from samples
 - **Healthcare**: Infer population health statistics
