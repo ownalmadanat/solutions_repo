@@ -1,7 +1,7 @@
 # Problem 2
-# 🎯 Estimating \( \pi \) using Monte Carlo Methods
+#  Estimating \( \pi \) using Monte Carlo Methods
 
-## 🧠 Motivation
+##  Motivation
 
 Monte Carlo simulations are a powerful class of algorithms that rely on randomness to solve mathematical problems. One elegant example is estimating the value of \( \pi \) using geometric probability. This connects probability, geometry, and numerical methods, and demonstrates how random simulations can approximate constants like \( \pi \).
 
@@ -9,7 +9,7 @@ Monte Carlo simulations are a powerful class of algorithms that rely on randomne
 
 ## Part 1: Estimating \( \pi \) using the Circle Method
 
-### 📐 1. Theoretical Foundation
+###  1. Theoretical Foundation
 
 We consider a unit circle of radius \( r = 1 \) inscribed inside a square of side length 2.
 
@@ -36,7 +36,7 @@ $$
 
 ---
 
-### 🔁 2. Simulation Steps
+###  2. Simulation Steps
 
 - Generate \( N \) random points \( (x_i, y_i) \) uniformly in the square \( [-1, 1] \times [-1, 1] \)
 - For each point, check if it lies inside the circle:  
@@ -51,7 +51,7 @@ $$
 
 ---
 
-### 📊 3. Visualization
+###  3. Visualization
 
 - Use color to distinguish:
   - Points inside the circle (e.g. blue)
@@ -60,7 +60,7 @@ $$
 
 ---
 
-### 📈 4. Analysis
+###  4. Analysis
 
 - As \( N \to \infty \), the estimate \( \hat{\pi} \to \pi \)
 - **Convergence is slow**: error typically decreases proportionally to  
@@ -73,7 +73,7 @@ $$
 
 ## Part 2: Estimating \( \pi \) using Buffon’s Needle
 
-### 🧮 1. Theoretical Foundation
+###  1. Theoretical Foundation
 
 Buffon's Needle is a classic probability problem:
 
@@ -91,7 +91,7 @@ $$
 
 ---
 
-### 🧪 2. Simulation Steps
+###  2. Simulation Steps
 
 - Set needle length \( L \) and line spacing \( d \) (commonly, \( L = d = 1 \))
 - For each drop:
@@ -106,7 +106,7 @@ $$
 
 ---
 
-### 📊 3. Visualization
+###  3. Visualization
 
 - Draw needle positions on a plane with horizontal lines
 - Show hit (crossing) vs miss (non-crossing) in different colors
@@ -114,7 +114,7 @@ $$
 
 ---
 
-### 📈 4. Analysis
+### 4. Analysis
 
 - Convergence is slower than the circle method
 - Estimate accuracy depends on number of trials \( N \)
@@ -122,7 +122,7 @@ $$
 
 ---
 
-## 🔍 Comparison of Methods
+##  Comparison of Methods
 
 | Method           | Visual Simplicity | Convergence Rate | Complexity | Fun Factor |
 |------------------|-------------------|------------------|------------|------------|
