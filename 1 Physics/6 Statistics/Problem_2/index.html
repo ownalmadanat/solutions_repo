@@ -120,12 +120,12 @@
 <div class="document" itemscope="itemscope" itemtype="http://schema.org/Article" role="main">
 <div class="section" itemprop="articleBody">
 <h1 id="problem-2">Problem 2</h1>
-<h1 id="estimating-pi-using-monte-carlo-methods">🎯 Estimating <span class="arithmatex">\( \pi \)</span> using Monte Carlo Methods</h1>
-<h2 id="motivation">🧠 Motivation</h2>
+<h1 id="estimating-pi-using-monte-carlo-methods">Estimating <span class="arithmatex">\( \pi \)</span> using Monte Carlo Methods</h1>
+<h2 id="motivation">Motivation</h2>
 <p>Monte Carlo simulations are a powerful class of algorithms that rely on randomness to solve mathematical problems. One elegant example is estimating the value of <span class="arithmatex">\( \pi \)</span> using geometric probability. This connects probability, geometry, and numerical methods, and demonstrates how random simulations can approximate constants like <span class="arithmatex">\( \pi \)</span>.</p>
 <hr/>
 <h2 id="part-1-estimating-pi-using-the-circle-method">Part 1: Estimating <span class="arithmatex">\( \pi \)</span> using the Circle Method</h2>
-<h3 id="1-theoretical-foundation">📐 1. Theoretical Foundation</h3>
+<h3 id="1-theoretical-foundation">1. Theoretical Foundation</h3>
 <p>We consider a unit circle of radius <span class="arithmatex">\( r = 1 \)</span> inscribed inside a square of side length 2.</p>
 <ul>
 <li>Area of the circle:<br/>
@@ -146,7 +146,7 @@ P = \frac{A_{\text{circle}}}{A_{\text{square}}} = \frac{\pi}{4}
 \pi \approx 4 \cdot \frac{\text{Number of points inside circle}}{\text{Total number of points}}
 \]</div>
 <hr/>
-<h3 id="2-simulation-steps">🔁 2. Simulation Steps</h3>
+<h3 id="2-simulation-steps">2. Simulation Steps</h3>
 <ul>
 <li>Generate <span class="arithmatex">\( N \)</span> random points <span class="arithmatex">\( (x_i, y_i) \)</span> uniformly in the square <span class="arithmatex">\( [-1, 1] \times [-1, 1] \)</span></li>
 <li>For each point, check if it lies inside the circle:<br/>
@@ -160,7 +160,7 @@ P = \frac{A_{\text{circle}}}{A_{\text{square}}} = \frac{\pi}{4}
   $$</li>
 </ul>
 <hr/>
-<h3 id="3-visualization">📊 3. Visualization</h3>
+<h3 id="3-visualization">3. Visualization</h3>
 <ul>
 <li>Use color to distinguish:</li>
 <li>Points inside the circle (e.g. blue)</li>
@@ -168,7 +168,7 @@ P = \frac{A_{\text{circle}}}{A_{\text{square}}} = \frac{\pi}{4}
 <li>Draw the boundary of the unit circle and square for reference.</li>
 </ul>
 <hr/>
-<h3 id="4-analysis">📈 4. Analysis</h3>
+<h3 id="4-analysis">4. Analysis</h3>
 <ul>
 <li>As <span class="arithmatex">\( N \to \infty \)</span>, the estimate <span class="arithmatex">\( \hat{\pi} \to \pi \)</span></li>
 <li><strong>Convergence is slow</strong>: error typically decreases proportionally to<br/>
@@ -179,7 +179,7 @@ P = \frac{A_{\text{circle}}}{A_{\text{square}}} = \frac{\pi}{4}
 </ul>
 <hr/>
 <h2 id="part-2-estimating-pi-using-buffons-needle">Part 2: Estimating <span class="arithmatex">\( \pi \)</span> using Buffon’s Needle</h2>
-<h3 id="1-theoretical-foundation_1">🧮 1. Theoretical Foundation</h3>
+<h3 id="1-theoretical-foundation_1">1. Theoretical Foundation</h3>
 <p>Buffon's Needle is a classic probability problem:</p>
 <ul>
 <li>Drop a needle of length <span class="arithmatex">\( L \)</span> onto a plane with parallel lines spaced <span class="arithmatex">\( d \)</span> units apart</li>
@@ -193,7 +193,7 @@ P = \frac{A_{\text{circle}}}{A_{\text{square}}} = \frac{\pi}{4}
 \pi \approx \frac{2L \cdot \text{Number of trials}}{d \cdot \text{Number of hits}}
 \]</div>
 <hr/>
-<h3 id="2-simulation-steps_1">🧪 2. Simulation Steps</h3>
+<h3 id="2-simulation-steps_1">2. Simulation Steps</h3>
 <ul>
 <li>Set needle length <span class="arithmatex">\( L \)</span> and line spacing <span class="arithmatex">\( d \)</span> (commonly, <span class="arithmatex">\( L = d = 1 \)</span>)</li>
 <li>For each drop:</li>
@@ -207,21 +207,21 @@ P = \frac{A_{\text{circle}}}{A_{\text{square}}} = \frac{\pi}{4}
 <li>Count hits and estimate <span class="arithmatex">\( \pi \)</span></li>
 </ul>
 <hr/>
-<h3 id="3-visualization_1">📊 3. Visualization</h3>
+<h3 id="3-visualization_1">3. Visualization</h3>
 <ul>
 <li>Draw needle positions on a plane with horizontal lines</li>
 <li>Show hit (crossing) vs miss (non-crossing) in different colors</li>
 <li>Useful for understanding random geometry</li>
 </ul>
 <hr/>
-<h3 id="4-analysis_1">📈 4. Analysis</h3>
+<h3 id="4-analysis_1">4. Analysis</h3>
 <ul>
 <li>Convergence is slower than the circle method</li>
 <li>Estimate accuracy depends on number of trials <span class="arithmatex">\( N \)</span></li>
 <li>More mathematically rich but computationally more complex</li>
 </ul>
 <hr/>
-<h2 id="comparison-of-methods">🔍 Comparison of Methods</h2>
+<h2 id="comparison-of-methods">Comparison of Methods</h2>
 <table>
 <thead>
 <tr>
