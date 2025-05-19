@@ -49,7 +49,7 @@ $$
   \hat{\pi} = 4 \cdot \frac{M}{N}
   $$
 
----
+--- 
 
 ###  3. Visualization
 

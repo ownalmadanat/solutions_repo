@@ -45,11 +45,11 @@ That is, the **sampling distribution of the sample mean** approaches a **normal 
 | \( n = 10 \) | Bell shape starts to form |
 | \( n = 30, 50 \) | Clearly normal-shaped |
 
-✅ CLT holds well even for small \( n \).
+CLT holds well even for small \( n \).
 
 ---
 
-### 2️⃣ Exponential Distribution: \( X \sim \text{Exp}(1) \)
+### 2 Exponential Distribution: \( X \sim \text{Exp}(1) \)
 
 - Right-skewed, unbounded.
 - Takes larger \( n \) for convergence.
@@ -65,7 +65,7 @@ That is, the **sampling distribution of the sample mean** approaches a **normal 
 
 ---
 
-### 3️⃣ Binomial Distribution: \( X \sim \text{Bin}(10, 0.5) \)
+### 3️ Binomial Distribution: \( X \sim \text{Bin}(10, 0.5) \)
 
 - Discrete, symmetric when \( p = 0.5 \)
 - Sample means become continuous-looking as \( n \) increases.
@@ -76,7 +76,7 @@ That is, the **sampling distribution of the sample mean** approaches a **normal 
 | \( n = 10 \) | Becoming smoother |
 | \( n = 30, 50 \) | Smooth and bell-shaped |
 
-✅ Discreteness fades with larger \( n \); CLT applies.
+ Discreteness fades with larger \( n \); CLT applies.
 
 ---
 
@@ -84,9 +84,9 @@ That is, the **sampling distribution of the sample mean** approaches a **normal 
 
 | Distribution   | Skewed? | Fast Convergence? | Normality at \( n = 50 \) |
 |----------------|--------|-------------------|----------------------------|
-| Uniform        | ❌ No   | ✅ Yes            | ✅ Yes                     |
-| Exponential    | ✅ Yes  | ❌ No             | ⚠️ Approximates Normal     |
-| Binomial       | ❌ Low  | ✅ Moderate       | ✅ Yes                     |
+| Uniform        |  No   | Yes            | Yes                     |
+| Exponential    |  Yes  |  No             | Approximates Normal     |
+| Binomial       |  Low  | Moderate       | Yes                     |
 
 ---
 
@@ -112,7 +112,7 @@ That is, the **sampling distribution of the sample mean** approaches a **normal 
 
 ---
 
-## ✅ Conclusion
+## Conclusion
 
 The Central Limit Theorem is powerful because it allows the use of **normal-based methods** (confidence intervals, hypothesis testing) on data from **non-normal populations**, provided the sample size is sufficiently large.
 
