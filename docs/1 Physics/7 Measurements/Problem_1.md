@@ -1,7 +1,7 @@
 # Problem 1
 # 🌍 Measuring Earth's Gravitational Acceleration with a Pendulum
 
-## 📌 Motivation
+##  Motivation
 
 The acceleration due to gravity ($g$) is a fundamental constant that governs the motion of objects under the influence of Earth's gravitational field. It is essential in fields such as structural engineering, orbital mechanics, and geophysics. One classic and accessible method for estimating $g$ involves using a simple pendulum, where the period of oscillation depends on the length of the pendulum and the local gravitational field.
 
@@ -19,7 +19,7 @@ Where:
 
 ---
 
-## 🧪 Materials
+## Materials
 
 - String (1.5 m)
 - Small mass (e.g., keychain, metal washer)
@@ -29,7 +29,7 @@ Where:
 
 ---
 
-## 🛠️ Experimental Setup
+##  Experimental Setup
 
 1. Suspend the mass from one end of the string and fix the other end to a rigid support.
 2. Measure the length from the pivot to the center of mass of the hanging object:
@@ -46,7 +46,7 @@ The uncertainty is estimated as half the smallest division on the measuring tape
 
 ---
 
-## 📊 Data Summary
+## Data Summary
 
 The following results are based on simulated measurements (you should replace these with your own data):
 
@@ -82,7 +82,7 @@ $$
 
 ---
 
-## 🧮 Gravitational Acceleration Calculation
+## Gravitational Acceleration Calculation
 
 Rearranging the pendulum formula:
 
@@ -98,7 +98,7 @@ $$
 
 ---
 
-## 📐 Uncertainty in $g$
+##  Uncertainty in $g$
 
 Using uncertainty propagation:
 
@@ -124,7 +124,7 @@ $$
 
 ---
 
-## ✅ Final Result
+##  Final Result
 
 $$
 \boxed{g = 9.71 \pm 0.03 \, \text{m/s}^2}
@@ -161,9 +161,9 @@ This approximation fails at larger angles, where the motion becomes nonlinear.
 
 ---
 
-## 🧾 Discussion and Analysis
+##  Discussion and Analysis
 
-### 🧮 Sources of Uncertainty
+### Sources of Uncertainty
 
 - **Length Measurement:**
   - Difficulty locating the center of mass precisely.
@@ -178,7 +178,7 @@ This approximation fails at larger angles, where the motion becomes nonlinear.
   - Variability in individual timing trials.
   - Standard deviation and mean uncertainty quantify this.
 
-### 📌 Assumptions
+###  Assumptions
 
 - Small-angle approximation is valid ($\theta < 15^\circ$).
 - The string is massless and inextensible.
@@ -186,7 +186,7 @@ This approximation fails at larger angles, where the motion becomes nonlinear.
 - The pivot is frictionless.
 - The local gravitational field is uniform.
 
-### 🎯 Accuracy and Improvement
+###  Accuracy and Improvement
 
 - The measured $g$ is within 1% of the accepted value.
 - To improve accuracy:
@@ -197,7 +197,7 @@ This approximation fails at larger angles, where the motion becomes nonlinear.
 
 ---
 
-## 📚 Conclusion
+##  Conclusion
 
 This experiment demonstrates that gravitational acceleration can be measured accurately with minimal equipment by applying principles of classical mechanics and uncertainty analysis. Despite inherent limitations in manual timing and measurement, a careful approach yields results consistent with accepted physical constants.
 
