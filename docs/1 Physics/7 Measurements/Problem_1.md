@@ -1,5 +1,5 @@
 # Problem 1
-# 🌍 Measuring Earth's Gravitational Acceleration with a Pendulum
+#  Measuring Earth's Gravitational Acceleration with a Pendulum
 
 ##  Motivation
 
@@ -137,7 +137,7 @@ $$
 
 ---
 
-## 🔍 Theoretical Background
+## Theoretical Background
 
 The simple pendulum behaves like a harmonic oscillator when displaced by small angles. The equation of motion is derived from Newton's second law and the restoring torque about the pivot point. The restoring force is:
 
