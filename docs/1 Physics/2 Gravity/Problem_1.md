@@ -58,7 +58,11 @@ $$
 
 ### Planets in the Solar System
 
-A plot of \( \log(T^2) \) vs \( \log(r^3) \) for planets will yield a straight line with slope ≈ 1, verifying the law.
+A plot of 
+$$
+\( \log(T^2) \) vs \( \log(r^3) \)
+$$
+for planets will yield a straight line with slope ≈ 1, verifying the law.
 
 ---
 
