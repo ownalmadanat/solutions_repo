@@ -6,13 +6,13 @@
 <meta content="IE=edge" http-equiv="X-UA-Compatible"/>
 <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
 <link href="../../../img/favicon.ico" rel="shortcut icon"/>
-<title>Problem 1 - Physics and Mathematics</title>
+<title>Gravity – Problem 1: Orbital Period and Orbital Radius - Physics and Mathematics</title>
 <link href="../../../css/theme.css" rel="stylesheet"/>
 <link href="../../../css/theme_extra.css" rel="stylesheet"/>
 <link href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github.min.css" rel="stylesheet"/>
 <script>
         // Current page data
-        var mkdocs_page_name = "Problem 1";
+        var mkdocs_page_name = "Gravity \u2013 Problem 1: Orbital Period and Orbital Radius";
         var mkdocs_page_input_path = "1 Physics/2 Gravity/Problem_1.md";
         var mkdocs_page_url = null;
       </script>
@@ -54,7 +54,25 @@
 </li>
 <li class="toctree-l1 current"><a class="reference internal current">2 Gravity</a>
 <ul class="current">
-<li class="toctree-l2 current"><a class="reference internal current" href="#">Problem 1</a>
+<li class="toctree-l2 current"><a class="reference internal current" href="#">Gravity – Problem 1: Orbital Period and Orbital Radius</a>
+<ul class="current">
+<li class="toctree-l3"><a class="reference internal" href="#1-derivation-keplers-third-law-for-circular-orbits">1. Derivation: Kepler’s Third Law for Circular Orbits</a>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="#2-implications-for-astronomy">2. Implications for Astronomy</a>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="#3-real-world-examples">3. Real-World Examples</a>
+<ul>
+<li class="toctree-l4"><a class="reference internal" href="#the-moon-around-earth">The Moon around Earth</a>
+</li>
+<li class="toctree-l4"><a class="reference internal" href="#planets-in-the-solar-system">Planets in the Solar System</a>
+</li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="#5-discussion-beyond-circular-orbits">5. Discussion: Beyond Circular Orbits</a>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="#conclusion">Conclusion</a>
+</li>
+</ul>
 </li>
 <li class="toctree-l2"><a class="reference internal" href="../Problem_2/">Problem 2</a>
 </li>
@@ -109,7 +127,7 @@
 <li><a aria-label="Docs" class="icon icon-home" href="../../.."></a></li>
 <li class="breadcrumb-item">1 Physics</li>
 <li class="breadcrumb-item">2 Gravity</li>
-<li class="breadcrumb-item active">Problem 1</li>
+<li class="breadcrumb-item active">Gravity – Problem 1: Orbital Period and Orbital Radius</li>
 <li class="wy-breadcrumbs-aside">
 </li>
 </ul>
@@ -117,6 +135,80 @@
 </div>
 <div class="document" itemscope="itemscope" itemtype="http://schema.org/Article" role="main">
 <div class="section" itemprop="articleBody">
+<h1 id="gravity-problem-1-orbital-period-and-orbital-radius">Gravity – Problem 1: Orbital Period and Orbital Radius</h1>
+<h2 id="1-derivation-keplers-third-law-for-circular-orbits">1. Derivation: Kepler’s Third Law for Circular Orbits</h2>
+<p>For a body of mass <span class="arithmatex">\( m \)</span> in a circular orbit of radius <span class="arithmatex">\( r \)</span> around a central mass <span class="arithmatex">\( M \)</span>, the gravitational force provides the centripetal force:</p>
+<div class="arithmatex">\[
+F_{\text{gravity}} = \frac{G M m}{r^2}, \quad F_{\text{centripetal}} = \frac{m v^2}{r}
+\]</div>
+<p>Setting these equal:</p>
+<div class="arithmatex">\[
+\frac{G M m}{r^2} = \frac{m v^2}{r} \Rightarrow v^2 = \frac{G M}{r}
+\]</div>
+<p>The orbital period <span class="arithmatex">\( T \)</span> is the time to complete one orbit:</p>
+<div class="arithmatex">\[
+T = \frac{2\pi r}{v} \Rightarrow T^2 = \frac{4\pi^2 r^2}{v^2}
+\Rightarrow T^2 = \frac{4\pi^2 r^3}{G M}
+\]</div>
+<p>This gives <strong>Kepler’s Third Law</strong>:</p>
+<div class="arithmatex">\[
+T^2 \propto r^3
+\]</div>
+<hr/>
+<h2 id="2-implications-for-astronomy">2. Implications for Astronomy</h2>
+<ul>
+<li><strong>Mass Determination</strong>: Given <span class="arithmatex">\( T \)</span> and <span class="arithmatex">\( r \)</span>, one can determine the mass of the central body using:</li>
+</ul>
+<div class="arithmatex">\[
+M = \frac{4\pi^2 r^3}{G T^2}
+\]</div>
+<ul>
+<li>
+<p><strong>Distance Estimation</strong>: If <span class="arithmatex">\( T \)</span> is known (e.g., from observation), <span class="arithmatex">\( r \)</span> can be calculated, and vice versa.</p>
+</li>
+<li>
+<p><strong>Universal Application</strong>: Applies not just to planets but to moons, satellites, and binary stars (modulo elliptical corrections).</p>
+</li>
+</ul>
+<hr/>
+<h2 id="3-real-world-examples">3. Real-World Examples</h2>
+<h3 id="the-moon-around-earth">The Moon around Earth</h3>
+<ul>
+<li><span class="arithmatex">\( T = 27.3 \)</span> days <span class="arithmatex">\( \approx 2.36 \times 10^6 \, \text{s} \)</span></li>
+<li><span class="arithmatex">\( r \approx 3.84 \times 10^8 \, \text{m} \)</span></li>
+</ul>
+<p>Compute Earth's mass using Kepler's law:</p>
+<div class="arithmatex">\[
+M \approx \frac{4\pi^2 r^3}{G T^2} \approx 5.97 \times 10^{24} \, \text{kg}
+\]</div>
+<h3 id="planets-in-the-solar-system">Planets in the Solar System</h3>
+<p>A plot of <span class="arithmatex">\( \log(T^2) \)</span> vs <span class="arithmatex">\( \log(r^3) \)</span> for planets will yield a straight line with slope ≈ 1, verifying the law.</p>
+<hr/>
+<h2 id="5-discussion-beyond-circular-orbits">5. Discussion: Beyond Circular Orbits</h2>
+<p>For elliptical orbits:</p>
+<ul>
+<li>Replace <span class="arithmatex">\( r \)</span> with the semi-major axis <span class="arithmatex">\( a \)</span>.</li>
+<li>Kepler's law generalizes to:</li>
+</ul>
+<div class="arithmatex">\[
+T^2 = \frac{4\pi^2 a^3}{G M}
+\]</div>
+<ul>
+<li>The law still holds, but more complex motion requires numerical simulations (e.g., Runge-Kutta integration).</li>
+<li>This generalization is crucial in characterizing exoplanets and binary star systems.</li>
+</ul>
+<hr/>
+<h2 id="conclusion">Conclusion</h2>
+<p>Kepler’s Third Law, derived from Newtonian mechanics, is a foundational result in celestial mechanics. It provides a direct connection between gravitational theory and observable planetary motion, allowing for:</p>
+<ul>
+<li>Mass and distance calculations.</li>
+<li>System architecture analysis.</li>
+<li>Extension to satellites, moons, and stars.</li>
+</ul>
+<p>Simulations and real-world data confirm its accuracy and importance in astronomy.</p>
+<p><img alt="alt text" src="../image.png"/>
+<img alt="alt text" src="../image-1.png"/>
+<img alt="alt text" src="../image-2.png"/></p>
 </div>
 </div><footer>
 <div aria-label="Footer Navigation" class="rst-footer-buttons" role="navigation">
