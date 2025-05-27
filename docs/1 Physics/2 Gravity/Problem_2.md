@@ -43,3 +43,6 @@ From gravitational potential and kinetic energy balance:
 ## Conclusion
 
 Understanding cosmic velocities is essential for mission design and orbital mechanics. The escape and orbital speeds define the energy requirements for launching spacecraft and exploring other worlds.
+![alt text](image-3.png)
+![alt text](image-4.png)
+![alt text](image-5.png)
