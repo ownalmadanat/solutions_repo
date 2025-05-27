@@ -6,13 +6,13 @@
 <meta content="IE=edge" http-equiv="X-UA-Compatible"/>
 <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
 <link href="../../../img/favicon.ico" rel="shortcut icon"/>
-<title>Problem 2 - Physics and Mathematics</title>
+<title>Problem 2# Problem 2: Escape Velocities and Cosmic Velocities - Physics and Mathematics</title>
 <link href="../../../css/theme.css" rel="stylesheet"/>
 <link href="../../../css/theme_extra.css" rel="stylesheet"/>
 <link href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github.min.css" rel="stylesheet"/>
 <script>
         // Current page data
-        var mkdocs_page_name = "Problem 2";
+        var mkdocs_page_name = "Problem 2# Problem 2: Escape Velocities and Cosmic Velocities";
         var mkdocs_page_input_path = "1 Physics/2 Gravity/Problem_2.md";
         var mkdocs_page_url = null;
       </script>
@@ -56,8 +56,22 @@
 <ul class="current">
 <li class="toctree-l2"><a class="reference internal" href="../Problem_1/">Gravity – Problem 1: Orbital Period and Orbital Radius</a>
 </li>
-<li class="toctree-l2 current"><a class="reference internal current" href="#">Problem 2</a>
+<li class="toctree-l2 current"><a class="reference internal current" href="#">Problem 2# Problem 2: Escape Velocities and Cosmic Velocities</a>
 <ul class="current">
+<li class="toctree-l3"><a class="reference internal" href="#1-definitions">1. Definitions</a>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="#2-mathematical-analysis">2. Mathematical Analysis</a>
+<ul>
+<li class="toctree-l4"><a class="reference internal" href="#derivation">Derivation:</a>
+</li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="#3-real-world-examples">3. Real-World Examples</a>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="#4-importance-in-space-exploration">4. Importance in Space Exploration</a>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="#conclusion">Conclusion</a>
+</li>
 </ul>
 </li>
 <li class="toctree-l2"><a class="reference internal" href="../Problem_3/">Problem 3</a>
@@ -111,7 +125,7 @@
 <li><a aria-label="Docs" class="icon icon-home" href="../../.."></a></li>
 <li class="breadcrumb-item">1 Physics</li>
 <li class="breadcrumb-item">2 Gravity</li>
-<li class="breadcrumb-item active">Problem 2</li>
+<li class="breadcrumb-item active">Problem 2# Problem 2: Escape Velocities and Cosmic Velocities</li>
 <li class="wy-breadcrumbs-aside">
 </li>
 </ul>
@@ -119,7 +133,81 @@
 </div>
 <div class="document" itemscope="itemscope" itemtype="http://schema.org/Article" role="main">
 <div class="section" itemprop="articleBody">
-<h1 id="problem-2">Problem 2</h1>
+<h1 id="problem-2-problem-2-escape-velocities-and-cosmic-velocities">Problem 2# Problem 2: Escape Velocities and Cosmic Velocities</h1>
+<h2 id="1-definitions">1. Definitions</h2>
+<ul>
+<li>
+<p><strong>First Cosmic Velocity (Orbital Velocity)</strong>: The minimum speed needed to maintain a circular orbit around a planet.
+  $$
+  v_1 = \sqrt{\frac{G M}{r}}
+  $$</p>
+</li>
+<li>
+<p><strong>Second Cosmic Velocity (Escape Velocity)</strong>: The speed needed to escape a planet's gravitational field without further propulsion.
+  $$
+  v_2 = \sqrt{\frac{2 G M}{r}} = \sqrt{2} \cdot v_1
+  $$</p>
+</li>
+<li>
+<p><strong>Third Cosmic Velocity</strong>: The speed required to escape the Sun's gravity from Earth’s orbit — i.e., to leave the Solar System.
+  $$
+  v_3 = \sqrt{v_{\text{esc,Earth}}^2 + v_{\text{orb,Earth}}^2}
+  $$</p>
+</li>
+</ul>
+<h2 id="2-mathematical-analysis">2. Mathematical Analysis</h2>
+<p>Where:
+- <span class="arithmatex">\( G = 6.67430 \times 10^{-11} \, \text{m}^3\text{kg}^{-1}\text{s}^{-2} \)</span>
+- <span class="arithmatex">\( M \)</span>: Mass of the celestial body
+- <span class="arithmatex">\( r \)</span>: Distance from the center of the body</p>
+<h3 id="derivation">Derivation:</h3>
+<p>From gravitational potential and kinetic energy balance:
+- Escape: <span class="arithmatex">\( \frac{1}{2}mv^2 = \frac{G M m}{r} \)</span>
+- Solve for <span class="arithmatex">\( v \)</span>: <span class="arithmatex">\( v = \sqrt{\frac{2 G M}{r}} \)</span></p>
+<h2 id="3-real-world-examples">3. Real-World Examples</h2>
+<table>
+<thead>
+<tr>
+<th>Body</th>
+<th>Radius (m)</th>
+<th>Mass (kg)</th>
+<th>Orbital Velocity (m/s)</th>
+<th>Escape Velocity (m/s)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Earth</td>
+<td><span class="arithmatex">\(6.37 \times 10^6\)</span></td>
+<td><span class="arithmatex">\(5.97 \times 10^{24}\)</span></td>
+<td>~7.91 km/s</td>
+<td>~11.2 km/s</td>
+</tr>
+<tr>
+<td>Mars</td>
+<td><span class="arithmatex">\(3.39 \times 10^6\)</span></td>
+<td><span class="arithmatex">\(6.39 \times 10^{23}\)</span></td>
+<td>~3.55 km/s</td>
+<td>~5.03 km/s</td>
+</tr>
+<tr>
+<td>Jupiter</td>
+<td><span class="arithmatex">\(6.99 \times 10^7\)</span></td>
+<td><span class="arithmatex">\(1.90 \times 10^{27}\)</span></td>
+<td>~42.1 km/s</td>
+<td>~59.5 km/s</td>
+</tr>
+</tbody>
+</table>
+<h2 id="4-importance-in-space-exploration">4. Importance in Space Exploration</h2>
+<ul>
+<li><strong>v₁</strong>: Used to put satellites into orbit.</li>
+<li><strong>v₂</strong>: Required for planetary escape (e.g., space missions to Mars or beyond).</li>
+<li><strong>v₃</strong>: Needed for interstellar missions (e.g., Voyager).</li>
+</ul>
+<hr/>
+<h2 id="conclusion">Conclusion</h2>
+<p>Understanding cosmic velocities is essential for mission design and orbital mechanics. The escape and orbital speeds define the energy requirements for launching spacecraft and exploring other worlds.</p>
 </div>
 </div><footer>
 <div aria-label="Footer Navigation" class="rst-footer-buttons" role="navigation">
