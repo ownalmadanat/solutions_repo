@@ -3,19 +3,13 @@
 ## 1. Definitions
 
 - **First Cosmic Velocity (Orbital Velocity)**: The minimum speed needed to maintain a circular orbit around a planet.
-  $$
-  v_1 = \sqrt{\frac{G M}{r}}
-  $$
+$$v_1 = \sqrt{\frac{G M}{r}}$$
 
 - **Second Cosmic Velocity (Escape Velocity)**: The speed needed to escape a planet's gravitational field without further propulsion.
-  $$
-  v_2 = \sqrt{\frac{2 G M}{r}} = \sqrt{2} \cdot v_1
-  $$
+  $$v_2 = \sqrt{\frac{2 G M}{r}} = \sqrt{2} \cdot v_1$$
 
 - **Third Cosmic Velocity**: The speed required to escape the Sun's gravity from Earth’s orbit — i.e., to leave the Solar System.
-  $$
-  v_3 = \sqrt{v_{\text{esc,Earth}}^2 + v_{\text{orb,Earth}}^2}
-  $$
+  $$v_3 = \sqrt{v_{\text{esc,Earth}}^2 + v_{\text{orb,Earth}}^2}$$
 
 ## 2. Mathematical Analysis
 
