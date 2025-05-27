@@ -138,3 +138,7 @@ Further accuracy could involve:
 ## 7. Conclusion
 
 The trajectory of a freely released payload near Earth is governed by gravitational dynamics and initial velocity vectors. By simulating the equations of motion, we can explore the boundary between orbital mechanics, escape physics, and atmospheric reentry — foundational for modern space exploration.
+
+![alt text](image-6.png)
+![alt text](image-7.png)
+![alt text](image-8.png)
