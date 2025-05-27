@@ -6,13 +6,13 @@
 <meta content="IE=edge" http-equiv="X-UA-Compatible"/>
 <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
 <link href="../../../img/favicon.ico" rel="shortcut icon"/>
-<title>Problem 3 - Physics and Mathematics</title>
+<title>Problem 3# Problem 3: Trajectories of a Freely Released Payload Near Earth - Physics and Mathematics</title>
 <link href="../../../css/theme.css" rel="stylesheet"/>
 <link href="../../../css/theme_extra.css" rel="stylesheet"/>
 <link href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github.min.css" rel="stylesheet"/>
 <script>
         // Current page data
-        var mkdocs_page_name = "Problem 3";
+        var mkdocs_page_name = "Problem 3# Problem 3: Trajectories of a Freely Released Payload Near Earth";
         var mkdocs_page_input_path = "1 Physics/2 Gravity/Problem_3.md";
         var mkdocs_page_url = null;
       </script>
@@ -58,8 +58,34 @@
 </li>
 <li class="toctree-l2"><a class="reference internal" href="../Problem_2/">Problem 2# Problem 2: Escape Velocities and Cosmic Velocities</a>
 </li>
-<li class="toctree-l2 current"><a class="reference internal current" href="#">Problem 3</a>
+<li class="toctree-l2 current"><a class="reference internal current" href="#">Problem 3# Problem 3: Trajectories of a Freely Released Payload Near Earth</a>
 <ul class="current">
+<li class="toctree-l3"><a class="reference internal" href="#motivation">Motivation</a>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="#1-gravitational-force-and-equations-of-motion">1. Gravitational Force and Equations of Motion</a>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="#2-trajectory-classification-based-on-total-mechanical-energy">2. Trajectory Classification Based on Total Mechanical Energy</a>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="#3-numerical-simulation-of-motion">3. Numerical Simulation of Motion</a>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="#4-initial-conditions-velocity-and-launch-angle">4. Initial Conditions: Velocity and Launch Angle</a>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="#5-real-world-applications">5. Real-World Applications</a>
+<ul>
+<li class="toctree-l4"><a class="reference internal" href="#orbital-insertion">Orbital Insertion</a>
+</li>
+<li class="toctree-l4"><a class="reference internal" href="#reentry-calculations">Reentry Calculations</a>
+</li>
+<li class="toctree-l4"><a class="reference internal" href="#escape-missions">Escape Missions</a>
+</li>
+<li class="toctree-l4"><a class="reference internal" href="#mission-abort">Mission Abort</a>
+</li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="#6-limitations-and-extensions">6. Limitations and Extensions</a>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="#7-conclusion">7. Conclusion</a>
+</li>
 </ul>
 </li>
 </ul>
@@ -111,7 +137,7 @@
 <li><a aria-label="Docs" class="icon icon-home" href="../../.."></a></li>
 <li class="breadcrumb-item">1 Physics</li>
 <li class="breadcrumb-item">2 Gravity</li>
-<li class="breadcrumb-item active">Problem 3</li>
+<li class="breadcrumb-item active">Problem 3# Problem 3: Trajectories of a Freely Released Payload Near Earth</li>
 <li class="wy-breadcrumbs-aside">
 </li>
 </ul>
@@ -119,7 +145,132 @@
 </div>
 <div class="document" itemscope="itemscope" itemtype="http://schema.org/Article" role="main">
 <div class="section" itemprop="articleBody">
-<h1 id="problem-3">Problem 3</h1>
+<h1 id="problem-3-problem-3-trajectories-of-a-freely-released-payload-near-earth">Problem 3# Problem 3: Trajectories of a Freely Released Payload Near Earth</h1>
+<h2 id="motivation">Motivation</h2>
+<p>In orbital mechanics, a critical challenge is predicting how objects behave when released in Earth's gravitational field. A payload released from a rocket can follow vastly different paths depending on its velocity, direction, and altitude. Understanding these trajectories is key to:</p>
+<ul>
+<li><strong>Satellite deployment</strong></li>
+<li><strong>Reentry capsule navigation</strong></li>
+<li><strong>Mission abort procedures</strong></li>
+<li><strong>Escape trajectory planning</strong></li>
+</ul>
+<p>This problem blends Newtonian gravity, Keplerian orbits, and computational physics to explore a wide range of behaviors in orbital dynamics.</p>
+<hr/>
+<h2 id="1-gravitational-force-and-equations-of-motion">1. Gravitational Force and Equations of Motion</h2>
+<p>The motion of a payload is governed by Newton's Law of Universal Gravitation:</p>
+<div class="arithmatex">\[
+\vec{F}_{\text{gravity}} = -\frac{GMm}{r^2} \hat{r}
+\]</div>
+<p>Which results in the acceleration:</p>
+<div class="arithmatex">\[
+\vec{a} = \frac{\vec{F}}{m} = -\frac{GM}{r^2} \hat{r} = -\frac{GM}{r^3} \vec{r}
+\]</div>
+<p>Where:
+- <span class="arithmatex">\( G = 6.67430 \times 10^{-11} \, \text{m}^3 \text{kg}^{-1} \text{s}^{-2} \)</span> is the gravitational constant
+- <span class="arithmatex">\( M \)</span> is the Earth's mass
+- <span class="arithmatex">\( m \)</span> is the payload mass (cancels out in motion equations)
+- <span class="arithmatex">\( \vec{r} \)</span> is the position vector from Earth's center</p>
+<p>This forms a second-order ordinary differential equation (ODE):</p>
+<div class="arithmatex">\[
+\frac{d^2 \vec{r}}{dt^2} = -\frac{GM}{r^3} \vec{r}
+\]</div>
+<hr/>
+<h2 id="2-trajectory-classification-based-on-total-mechanical-energy">2. Trajectory Classification Based on Total Mechanical Energy</h2>
+<p>The trajectory of a payload depends on its total <strong>specific mechanical energy</strong> <span class="arithmatex">\( E \)</span>, given by:</p>
+<div class="arithmatex">\[
+E = \frac{v^2}{2} - \frac{GM}{r}
+\]</div>
+<p>The type of trajectory depends on the sign of <span class="arithmatex">\( E \)</span>:</p>
+<table>
+<thead>
+<tr>
+<th>Trajectory Type</th>
+<th>Condition</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Circular orbit</td>
+<td><span class="arithmatex">\( E &lt; 0 \)</span>, <span class="arithmatex">\( v = v_c \)</span></td>
+<td>Constant radius around Earth</td>
+</tr>
+<tr>
+<td>Elliptical orbit</td>
+<td><span class="arithmatex">\( E &lt; 0 \)</span>, <span class="arithmatex">\( v &lt; v_{\text{esc}} \)</span></td>
+<td>Closed orbit but not circular</td>
+</tr>
+<tr>
+<td>Parabolic</td>
+<td><span class="arithmatex">\( E = 0 \)</span></td>
+<td>Just escapes Earth's gravity</td>
+</tr>
+<tr>
+<td>Hyperbolic</td>
+<td><span class="arithmatex">\( E &gt; 0 \)</span></td>
+<td>Escapes with excess energy</td>
+</tr>
+<tr>
+<td>Ballistic</td>
+<td><span class="arithmatex">\( v \)</span> insufficient for orbit</td>
+<td>Returns to Earth</td>
+</tr>
+</tbody>
+</table>
+<p>Where:
+- <span class="arithmatex">\( v_{\text{esc}} = \sqrt{\frac{2GM}{r}} \)</span>: escape velocity
+- <span class="arithmatex">\( v_c = \sqrt{\frac{GM}{r}} \)</span>: circular orbital velocity</p>
+<hr/>
+<h2 id="3-numerical-simulation-of-motion">3. Numerical Simulation of Motion</h2>
+<p>We can numerically integrate the second-order equation using time-stepping techniques like <strong>Euler</strong> or <strong>Runge-Kutta</strong> methods:</p>
+<p>Let:
+- <span class="arithmatex">\( \vec{v}_{t+1} = \vec{v}_t + \vec{a}_t \Delta t \)</span>
+- <span class="arithmatex">\( \vec{r}_{t+1} = \vec{r}_t + \vec{v}_{t+1} \Delta t \)</span></p>
+<p>At each step:
+1. Calculate current distance <span class="arithmatex">\( r = |\vec{r}| \)</span>
+2. Compute acceleration <span class="arithmatex">\( \vec{a} = -\frac{GM}{r^3} \vec{r} \)</span>
+3. Update velocity and position vectors</p>
+<p>We simulate motion over time to trace the trajectory.</p>
+<hr/>
+<h2 id="4-initial-conditions-velocity-and-launch-angle">4. Initial Conditions: Velocity and Launch Angle</h2>
+<p>Assume payload is released from low Earth orbit (LEO) at altitude <span class="arithmatex">\( h \)</span>, so:</p>
+<div class="arithmatex">\[
+r_0 = R_{\text{Earth}} + h
+\]</div>
+<p>Let the initial velocity be <span class="arithmatex">\( v_0 \)</span>, launched at an angle <span class="arithmatex">\( \theta \)</span> above the horizontal:</p>
+<ul>
+<li><span class="arithmatex">\( v_x = v_0 \cos(\theta) \)</span></li>
+<li><span class="arithmatex">\( v_y = v_0 \sin(\theta) \)</span></li>
+</ul>
+<p>Different values of <span class="arithmatex">\( v_0 \)</span> and <span class="arithmatex">\( \theta \)</span> will result in different trajectory outcomes:
+- Too small <span class="arithmatex">\( v_0 \)</span>: payload falls back
+- <span class="arithmatex">\( v_0 \approx v_c \)</span>: stable orbit
+- <span class="arithmatex">\( v_0 \geq v_{\text{esc}} \)</span>: escape trajectory</p>
+<hr/>
+<h2 id="5-real-world-applications">5. Real-World Applications</h2>
+<p>Understanding these trajectories is critical for:</p>
+<h3 id="orbital-insertion">Orbital Insertion</h3>
+<p>Used to place satellites in specific orbits by releasing them at correct speed and angle.</p>
+<h3 id="reentry-calculations">Reentry Calculations</h3>
+<p>Returning astronauts or probes safely to Earth requires simulating descent paths.</p>
+<h3 id="escape-missions">Escape Missions</h3>
+<p>Launching missions to the Moon or Mars requires achieving escape velocity with the correct direction.</p>
+<h3 id="mission-abort">Mission Abort</h3>
+<p>Emergency payload releases or capsule separation must be simulated to ensure safety and landing precision.</p>
+<hr/>
+<h2 id="6-limitations-and-extensions">6. Limitations and Extensions</h2>
+<p>This simulation assumes:
+- No atmospheric drag
+- Only Earth’s gravity
+- Spherical Earth model</p>
+<p>Further accuracy could involve:
+- Drag modeling
+- Earth's oblateness
+- Lunar and solar perturbations
+- Rotating frame of reference</p>
+<hr/>
+<h2 id="7-conclusion">7. Conclusion</h2>
+<p>The trajectory of a freely released payload near Earth is governed by gravitational dynamics and initial velocity vectors. By simulating the equations of motion, we can explore the boundary between orbital mechanics, escape physics, and atmospheric reentry — foundational for modern space exploration.</p>
 </div>
 </div><footer>
 <div aria-label="Footer Navigation" class="rst-footer-buttons" role="navigation">
