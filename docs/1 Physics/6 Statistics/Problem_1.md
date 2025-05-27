@@ -34,7 +34,7 @@ That is, the **sampling distribution of the sample mean** approaches a **normal 
 
 ##  Results by Distribution
 
-### 1️⃣ Uniform Distribution: \( X \sim \mathcal{U}(0, 1) \)
+###  Uniform Distribution: \( X \sim \mathcal{U}(0, 1) \)
 
 - Symmetric, bounded distribution.
 - Sample means converge quickly to normality.
@@ -61,7 +61,7 @@ CLT holds well even for small \( n \).
 | \( n = 30 \) | More symmetric |
 | \( n = 50 \) | Nearly normal |
 
-⚠️ Larger \( n \) needed for CLT to apply effectively.
+ Larger \( n \) needed for CLT to apply effectively.
 
 ---
 
@@ -80,7 +80,7 @@ CLT holds well even for small \( n \).
 
 ---
 
-## 🔍 Summary Table
+##  Summary Table
 
 | Distribution   | Skewed? | Fast Convergence? | Normality at \( n = 50 \) |
 |----------------|--------|-------------------|----------------------------|

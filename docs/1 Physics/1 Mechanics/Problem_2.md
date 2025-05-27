@@ -1,4 +1,4 @@
-# Problem 2"""
+# Problem 2
 Forced Damped Pendulum Simulation
 Mathematical Formulation:
 
