@@ -174,4 +174,4 @@ $$
 
  
  https://replit.com/@gewfwewegfwef/ProjectileRangePlotter
- ![alt text](image-2.png)
+ ![alt text](image-2.png) ..
